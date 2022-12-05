@@ -1,0 +1,53 @@
+body{
+    background-image: url(https://c0.wallpaperflare.com/preview/572/961/266/sky-dark-light-clouds.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+h1{
+    position: relative;
+    font-size: 4rem;
+    color: rgba(255,255,255,.6);
+    z-index: 2;
+}
+
+#outline{
+    top:1%;
+    position: absolute;
+    font-size: 4.1rem;
+    font-weight:700;
+    color: rgba(2, 2, 2, .6);
+    z-index: 1;
+}
+
+.display{
+    box-sizing: border-box;
+    margin:1rem;
+    padding:1rem;
+    background-color: grey;
+    display:flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 300px;
+    text-align: center;
+}
+
+.display > div{
+    margin: 1rem 0;
+}
+#location{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#temp{
+    font-size: 1.5rem;
+    font-weight:600;
+}
+
+#sky, #wind{
+    font-weight:600;
+}
