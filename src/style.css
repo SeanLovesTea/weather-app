@@ -33,6 +33,7 @@ h1{
     flex-grow: 0;
     width: 300px;
     text-align: center;
+    position: relative;
 }
 
 .display > div{
@@ -48,6 +49,18 @@ h1{
     font-weight:600;
 }
 
-#sky, #wind{
+#sky,
+#wind,
+#feel,
+#humid{
     font-weight:600;
+    margin:.5rem;
+}
+#feel{
+    margin-bottom:1rem;
+}
+#direction{
+    position: absolute;
+    bottom: 2%;
+    right:25%;
 }

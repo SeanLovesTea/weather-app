@@ -20,13 +20,19 @@ async function runApp (location) {
 }
 
 function renderDisplay (data) {
-  const display_location = document.querySelector('#location')
-  const display_temp = document.querySelector('#temp')
-  const display_sky = document.querySelector('#sky')
-  const display_wind = document.querySelector('#wind')
+  const displayLocation = document.querySelector('#location')
+  const displayTemp = document.querySelector('#temp')
+  const displayFeel = document.querySelector('#feel')
+  const displayHumid = document.querySelector('#humid')
+  const displaySky = document.querySelector('#sky')
+  const displayWind = document.querySelector('#wind')
+  const displayDirection = document.querySelector('#direction')
 
-  display_location.innerHTML = data.location
-  display_temp.innerHTML = data.temp
-  display_sky.innerHTML = data.sky
-  display_wind.innerHTML = data.wind
+  displayLocation.innerHTML = data.location
+  displayTemp.innerHTML = (Math.floor(data.temp - 273.15)) + '°C'
+  displayFeel.innerHTML = 'feels like ' + (Math.floor(data.temp - 273.15)) + '°C'
+  displayHumid.innerHTML = 'humidity ' + data.humidity + '%'
+  displaySky.innerHTML = data.sky
+  displayWind.innerHTML = data.wind + ' mph'
+  displayDirection.style.transform = 'rotate(' + data.direction + 'deg)'
 }

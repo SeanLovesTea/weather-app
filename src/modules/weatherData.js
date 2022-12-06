@@ -9,7 +9,13 @@ async function getWeatherData (city) {
     console.log('weather ', weatherData.weather[0].description)
     console.log('temp ', weatherData.main)
     const weatherDataObj = {
-      location: weatherData.name, temp: weatherData.main.temp, sky: weatherData.weather[0].description, wind: weatherData.wind.speed
+      location: weatherData.name,
+      temp: weatherData.main.temp,
+      sky: weatherData.weather[0].description,
+      wind: weatherData.wind.speed,
+      feel: weatherData.main.feels_like,
+      humidity: weatherData.main.humidity,
+      direction: weatherData.wind.deg
     }
     weatherData = weatherDataObj
     return weatherData
