@@ -20,7 +20,7 @@ async function getWeatherData (city) {
     weatherData = weatherDataObj
     return weatherData
   } catch (err) {
-    alert(err)
+    alert('please enter a valid location')
     return null
   }
 }

@@ -27,17 +27,25 @@ h1{
     box-sizing: border-box;
     margin:1rem;
     padding:1rem;
-    background-color: grey;
+    background-color: rgba(255,255,255,.7);
     display:flex;
     flex-direction: column;
     flex-grow: 0;
     width: 300px;
     text-align: center;
     position: relative;
+    border-radius: 4px;
+    box-shadow: 1px 1px 7px grey;
+    
 }
 
 .display > div{
     margin: 1rem 0;
+}
+#location-input{
+    border-radius: 4px;
+    border:none;
+    padding: .5rem;
 }
 #location{
     font-size: 2em;
